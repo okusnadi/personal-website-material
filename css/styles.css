@@ -250,12 +250,20 @@ _:-ms-input-placeholder, :root .demo-graph {
 	padding:0 0 0 0;
 	margin:0;
 	border:none;
-}.
-
+}
+.mdl-footer-google-logo {
+	width:auto;
+	height:16px;
+	top: 50%;
+	;transform: translateY(-5%);
+	padding:0 0 0 0;
+	margin:0;
+	border:none;
+}
 .footer-text
 {
 	font-weight:500!important;
-	height: 50px;
-    line-height: 50px;
+	height: 20px;
+    line-height: 20px;
     font-weight:500!important;
-}.
+}
