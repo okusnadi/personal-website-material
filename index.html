@@ -17,12 +17,12 @@
 -->
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="images/favico.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage | Titto Thomas</title>
-
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,17 +39,19 @@
       z-index: 900;
     }
     </style>
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="./js/jquery-latest.min.js" type="text/javascript"></script>
     <script src="./js/material.min.js"></script>
 	<script>
 	  $(function(){
-            $('a.smooth').click(function(){
-                var speed = 1000;
+            $('a.smooth').click(function(e){
+		e.preventDefault();
+                var speed = 500;
                 var href= $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
                 var nav_height = $(".mdl-layout__header-row").height();
                 var position = target.get(0).offsetTop - nav_height - 7;
                 $(".mdl-layout__content").animate({scrollTop:position}, speed, "swing");
+		return false;
             });
         });
 	</script>
