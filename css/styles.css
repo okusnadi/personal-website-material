@@ -147,7 +147,11 @@ h98{
   color: rgba(255, 255, 255, 0.56);
   margin-right: 32px;
 }
-
+.active-menu-item
+{
+	background-color: rgba(0, 0, 0, 0.54);
+    border-right: thick solid #78909c;
+}
 .demo-content {
   max-width: 1080px;
 }
