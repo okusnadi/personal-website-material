@@ -297,3 +297,30 @@ _:-ms-input-placeholder, :root .demo-graph {
 	width: 90%;
 	height: 5px;
 }
+
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+  background: #3E4EB8;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+.demo-card-event.mdl-card {
+  width: 100%;
+  height: auto;
+  background: #fafafa;
+}
+.mdl-card__title > .message-box
+{
+	padding: 0px 20px;
+	width: 80%;
+}

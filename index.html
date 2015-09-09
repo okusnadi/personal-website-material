@@ -150,7 +150,45 @@
 	<section id="contact" >
 		<div class="mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--12-col">
 			<div class="one-page-size">
-				<h1> Contact. </h1>
+				<div class="mdl-grid">
+				  <div class="mdl-cell mdl-cell--6-col">
+						<div class="demo-card-event mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__actions ">
+								<a class="mdl-button mdl-button--colored ">
+								  Drop a message
+								</a>
+								<div class="mdl-layout-spacer"></div>
+								<i class="material-icons">message</i>
+							</div>
+							<div class="mdl-card__title mdl-card--expand mdl-card--border">
+								<div class="message-box">
+									<form method='POST' action="mailform.php">
+									  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="mdl-textfield__input" type="text" id="name" />
+										<label class="mdl-textfield__label" for="name">Name</label>
+									  </div>
+									  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" />
+										<label class="mdl-textfield__label" for="email">Email</label>
+										<span class="mdl-textfield__error">Not a valid email address!</span>
+									  </div>
+									  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<textarea class="mdl-textfield__input" type="text" rows= "7" id="message" ></textarea>
+										<label class="mdl-textfield__label" for="message">Message</label>
+									  </div>
+									  <div style="padding: 10px;">
+									  <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" >
+										  Send
+									  </button>
+									  </div>
+									</form>
+								</div>
+							</div>
+						  
+						</div>
+				  </div>
+				  <div class="mdl-cell mdl-cell--6-col">4</div>
+				</div>
 			</div>
 		</div>
 	</section>
