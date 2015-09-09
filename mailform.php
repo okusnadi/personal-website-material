@@ -1,3 +1,4 @@
+<?php
 $to      = 'tittoambadan@gmail.com';
 $subject = 'Personal page message from ' .  $_POST['name'];
 $message = $_POST['message'];
@@ -11,3 +12,5 @@ if($send) :
 else :
     echo "Email sending failed";
 endif;
+
+?>
