@@ -8,9 +8,13 @@ $send = mail($to, $subject, $message, $headers);
 
 // this will help you to get the status mail sent or not
 if($send) :
-   echo "Email sent";
+   $message = "Email sent";
 else :
-    echo "Email sending failed";
+   $message = "Email sending failed";
 endif;
 
+// This is in the PHP file and sends a Javascript alert to the client
+header('Location: index.html');
+echo "<script type='text/javascript'>alert('$message');</script>";
+exit;
 ?>
