@@ -271,3 +271,29 @@ _:-ms-input-placeholder, :root .demo-graph {
     line-height: 20px;
     font-weight:500!important;
 }
+
+.one-page-size
+{
+	width: 100%;
+	height: calc(100vh - 100px);
+	padding: 10px 10px 10px 10px;
+}
+
+.main-title-center-text
+{
+	text-align : center;	
+}
+
+.main-content-center-text
+{
+	padding: 5% 5% 5% 5%;
+	text-align: justify;
+	font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:20px;line-height:1.5;letter-spacing:.03em;font-weight:400;
+}
+
+.home-bar
+{
+	padding: 0px 5% 0px 5%;
+	width: 90%;
+	height: 5px;
+}
