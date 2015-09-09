@@ -13,8 +13,9 @@ else :
    $message = "Email sending failed";
 endif;
 
+echo $message
 // This is in the PHP file and sends a Javascript alert to the client
-echo "<script type='text/javascript'>alert('$message');</script>";
+echo '<script type='text/javascript'>alert('$message');</script>';
 header('Location: index.html');
 exit;
 ?>
